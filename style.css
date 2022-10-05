@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Alatsi&family=Roboto:wght@400;700;900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+img {
+  height: 100%;
+}
+
+.link-hover--effect {
+  position: relative;
+}
+
+.link-hover--effect-red::after {
+  background-color: rgba(151,9,8,255);
+}
+
+.link-hover--effect-black::after {
+  background-color: black;
+}
+
+.link-hover--effect::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  right: 0;
+  height: 3px;
+  transition: all 350ms ease;
+  width: 0;
+}
+
+.link-hover--effect:hover::after {
+  left: 0;
+  width: 100%;
+}
+
+.click--effect {
+  transition: all 300ms ease;
+  transform: scale(1);
+  display: inline-block;
+}
+
+.click--effect:hover {
+  transform: scale(1.1);
+}
+
+.click--effect:active {
+  transform: scale(.9);
+}
+
+main {
+  height: 100vh;
+}
+
+/* 
+
+NAVBAR
+
+*/
+
+.navbar {
+  padding: 24px 32px;
+  margin: 0 auto;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+}
+
+.nav__company {
+  display: flex;
+  align-items: center;
+}
+
+.nav__logo--wrapper {
+  height: 50px;
+  padding-right: 8px;
+}
+
+.nav__company--name {
+  font-size: 28px;
+  font-weight: 700;
+  color: rgba(151,9,8,255);
+}
+
+.nav__links {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.nav__link {
+  margin-left: 48px;
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+.current {
+  color: rgba(151,9,8,255);
+}
+
+.nav__link--btn {
+  background-color: rgba(151,9,8,255);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 100px;
+}
