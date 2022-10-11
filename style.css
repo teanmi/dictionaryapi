@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Alatsi&family=Roboto:wght@400;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Alatsi&family=Roboto:wght@400;700;900&display=swap");
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 img {
@@ -16,7 +16,7 @@ img {
 }
 
 .link-hover--effect-red::after {
-  background-color: rgba(151,9,8,255);
+  background-color: rgba(151, 9, 8, 255);
 }
 
 .link-hover--effect-black::after {
@@ -49,11 +49,15 @@ img {
 }
 
 .click--effect:active {
-  transform: scale(.9);
+  transform: scale(0.9);
 }
 
 main {
-  height: 100vh;
+  height: 50vh;
+}
+
+.red {
+  color: rgba(151, 9, 8, 255);
 }
 
 /* 
@@ -85,7 +89,7 @@ NAVBAR
 .nav__company--name {
   font-size: 28px;
   font-weight: 700;
-  color: rgba(151,9,8,255);
+  color: rgba(151, 9, 8, 255);
 }
 
 .nav__links {
@@ -102,12 +106,74 @@ NAVBAR
 }
 
 .current {
-  color: rgba(151,9,8,255);
+  color: rgba(151, 9, 8, 255);
 }
 
 .nav__link--btn {
-  background-color: rgba(151,9,8,255);
+  background-color: rgba(151, 9, 8, 255);
   color: white;
   padding: 8px 12px;
   border-radius: 100px;
+}
+
+/* 
+
+MAIN
+
+*/
+
+header {
+  text-align: center;
+}
+
+.title {
+  font-size: 60px;
+  line-height: 1.2;
+  margin: 24px auto;
+  max-width: 800px;
+
+}
+
+.sub-title {
+  font-size: 32px;
+  margin-bottom: 32px;
+}
+
+.search {
+  padding: 0 48px;
+  max-width: 800px;
+  margin: 0 auto;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#search__input-box {
+  width: 70%;
+  height: 50px;
+  border-radius: 15px;
+  font-size: 28px;
+  padding: 0 20px;
+  border: 1px rgba(151, 9, 8, 255) solid;
+}
+
+#search__input-box:focus {
+  outline: rgba(151, 9, 8, 255) solid 2px;
+}
+
+.search__enter {
+  width: 25%;
+  font-size: 32px;
+  color: white;
+  background-color: red;
+  padding: 8px 12px;
+  border-radius: 15px;
+  box-shadow: 0 0 16px 1px rgba(0, 0, 0, 0.4);
+}
+
+.main__img--wrapper{
+  height: 50vh;
+  padding-bottom: 48px;
+  text-align: center;
 }

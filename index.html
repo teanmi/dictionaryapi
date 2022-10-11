@@ -10,6 +10,10 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/a732b75f44.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Word Search</title>
   </head>
   <body>
@@ -23,11 +27,16 @@
         </div>
         <ul class="nav__links">
           <li class="">
-            <a class="nav__link link-hover--effect
-            link-hover--effect-red current" href="#">Home</a>
+            <a
+              class="nav__link link-hover--effect link-hover--effect-red current"
+              href="#"
+              >Home</a
+            >
           </li>
           <li class="">
-            <a class="nav__link link-hover--effect link-hover--effect-black" href="./words.html"
+            <a
+              class="nav__link link-hover--effect link-hover--effect-black"
+              href="./words.html"
               >Search</a
             >
           </li>
@@ -40,15 +49,24 @@
       </nav>
       <header>
         <h1 class="title red">Highly Awarded Online Dictionary</h1>
-        <h2 class="sub-title">Find definition of any word with <span class="red">Word Search</span></h2>
+        <h2 class="sub-title">
+          Find definition of any word with <span class="red">Word Search</span>
+        </h2>
         <div class="search">
-          <input type="text" id="search__box">
-          <button>
-            <i class="fa-light fa-magnifying-glass"></i>
-          </button>
+          <input
+            type="text"
+            id="search__input-box"
+            placeholder="Search for Word"
+          />
+          <i
+            class="search__enter click--effect fa-solid fa-magnifying-glass"
+          ></i>
         </div>
-        <figure class="main__img--wrapper"><img src="./images/undraw_book_lover_re_rwjy (1).svg" alt=""></figure>
+        
       </header>
     </main>
+    <figure class="main__img--wrapper">
+      <img src="./images/undraw_book_lover_re_rwjy (1).svg" alt="" />
+    </figure>
   </body>
 </html>
