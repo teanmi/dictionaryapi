@@ -105,7 +105,7 @@ NAVBAR
   color: black;
 }
 
-.current {
+.current-link {
   color: rgba(151, 9, 8, 255);
 }
 
@@ -156,6 +156,11 @@ header {
   font-size: 28px;
   padding: 0 20px;
   border: 1px rgba(151, 9, 8, 255) solid;
+  outline-width: 0px;
+}
+
+#search__input-box:hover {
+  outline: rgba(151, 9, 8, 255) solid 1px;
 }
 
 #search__input-box:focus {

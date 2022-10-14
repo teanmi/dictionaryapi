@@ -1,0 +1,75 @@
+.white-btn {
+  background-color: white;
+  color: rgba(151, 9, 8, 255);
+  box-shadow: 0 0 16px 1px rgba(0, 0, 0, 0.4);
+}
+
+.current-link {
+}
+
+.link-hover--effect-white::after {
+  background-color: white;
+}
+
+.background-red {
+  background-color: rgba(151, 9, 8, 255);
+}
+
+.navbar {
+  padding: 24px 32px;
+  padding-left: 20px;
+}
+
+.nav__logo--wrapper {
+  background-color: white;
+  border-radius: 999px;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-right: 12px;
+}
+
+.nav__logo--wrapper img {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 10px;
+}
+
+.nav__company--name {
+  color: white;
+}
+
+.link-hover--effect {
+  color: white;
+}
+
+.main__search-bar {
+  margin: 0 auto;
+  margin-top: 32px;
+  padding: 0 100px;
+  max-width: 1000px;
+
+}
+
+.main__search-bar--input {
+  width: auto;
+  font-size: 32px;
+  height: 48px;
+  border: none;
+  border-bottom: 1px solid rgba(99, 96, 96, 0.6);
+  transition: all 300ms ease;
+  margin-right: 24px;
+  outline: none;
+}
+
+.main__search-bar--input:focus {
+  border-width: 2px;
+}
+
+.search__enter {
+  max-width: 200px;
+}
