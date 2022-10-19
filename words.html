@@ -52,12 +52,18 @@
       </div>
       <header>
         <div class="main__search-bar">
-          <input class="main__search-bar--input" type="text" placeholder='Enter a "word"'/>
+          <input class="main__search-bar--input" id="search-bar" type="text" placeholder='Enter a "word"'/>
           <i
-            class="search__enter click--effect fa-solid fa-magnifying-glass"
+            class="search__enter click--effect fa-solid fa-magnifying-glass" onclick="searchWord()"
           ></i>
+        </div>
+        <div class="words">
+          
         </div>
       </header>
     </main>
   </body>
+  <script src="./word.js"></script>
 </html>
+
+
