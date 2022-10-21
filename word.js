@@ -1,12 +1,35 @@
+let error;
 
 const searchWord = async () => {
+  error = false;
   const wordsHTML = document.querySelector(".words");
-  wordsHTML.innerHTML = ""
+  wordsHTML.innerHTML = "";
 
-  const word = document.getElementById("search-bar").value;
+  const word = document.getElementById("search-bar").value.toLowerCase();
 
   if (!word) {
-    alert("please enter a word");
+    wordsHTML.innerHTML += `<div class="word">
+  <h1 class="word__title">${"Please enter a word"}</h1>
+    <div class="word__eachMeaning"></div>
+  </div>`;
+    return;
+  }
+
+  var request;
+  if (window.XMLHttpRequest) request = new XMLHttpRequest();
+  else request = new ActiveXObject("Microsoft.XMLHTTP");
+  request.open(
+    "GET",
+    `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`,
+    false
+  );
+  request.send();
+  if (request.status === 404) {
+    wordsHTML.innerHTML += `<div class="word">
+  <h1 class="word__title">${word}</h1>
+    <div class="word__eachMeaning">${"Cannot find word"}</div>
+  </div>`;
+    return;
   }
 
   const wordJson = await fetch(

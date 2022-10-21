@@ -80,6 +80,8 @@
   width: 500px;
   margin: 0 auto;
   margin-top: 36px;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .purple {
