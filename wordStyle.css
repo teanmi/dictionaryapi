@@ -15,6 +15,17 @@
   background-color: rgba(151, 9, 8, 255);
 }
 
+
+.link-hover--effect {
+  color: white;
+}
+
+/* 
+
+NAVBAR
+
+*/
+
 .navbar {
   padding: 24px 32px;
   padding-left: 20px;
@@ -43,16 +54,19 @@
   color: white;
 }
 
-.link-hover--effect {
-  color: white;
-}
+
+
+/* 
+
+Search Bar
+
+*/
 
 .main__search-bar {
   margin: 0 auto;
   margin-top: 32px;
   padding: 0 100px;
   max-width: 1000px;
-
 }
 
 .main__search-bar--input {
@@ -74,16 +88,80 @@
   max-width: 200px;
 }
 
+/* 
+
+Words 
+
+*/
+
 .words {
-  border: 3px solid black;
+  border: 3px solid rgba(151, 9, 8, 255);
   height: 500px;
   width: 500px;
-  margin: 0 auto;
-  margin-top: 36px;
-  overflow-y: scroll;
+  margin: 36px auto;
   overflow-x: hidden;
+  box-shadow: 0 0 16px 1px rgba(0, 0, 0, 0.4);
+  line-height: 1.3;
 }
 
-.purple {
-  background-color: purple;
+.word {
+  padding: 12px;
+}
+
+.word__title {
+  margin-bottom: 12px;
+}
+
+.word__meaning {
+  padding: 16px 0;
+  border-bottom: 1px solid black;
+}
+
+.word__meaning:last-child {
+  padding-bottom: 0px;
+  border-bottom: none;
+}
+
+.word__definition {
+  margin-bottom: 12px;
+}
+
+.word__definition:last-child {
+  margin-bottom: 0px;
+}
+
+/* 
+
+Loading
+
+*/
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fa-spinner {
+  visibility: hidden;
+  position: absolute;
+  color: rgba(151, 9, 8, 255);
+  font-size: 100px;
+  animation: spinner 1.5s infinite linear;
+}
+
+.loading > .fa-spinner {
+  visibility: visible;
+  position: relative;
+  
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
