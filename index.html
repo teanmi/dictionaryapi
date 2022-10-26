@@ -28,7 +28,8 @@
         <ul class="nav__links">
           <li class="">
             <a
-              class="nav__link link-hover--effect link-hover--effect-red current-link"
+              id="current-link"
+              class="nav__link link-hover--effect link-hover--effect-red"
               href="#"
               >Home</a
             >
@@ -41,11 +42,41 @@
             >
           </li>
           <li class="">
-            <a class="nav__link nav__link--btn click--effect" href="#"
+            <a class="nav__link nav__link--btn click--effect no-click" href="#"
               >Contacts</a
             >
           </li>
         </ul>
+        <i
+          class="fa-solid fa-bars drop-menu-btn"
+          onclick="toggleDropDown()"
+        ></i>
+        <div class="drop-menu">
+          <ul class="drop-menu__links">
+            <li class="">
+              <a
+                id="current-link"
+                class="drop-menu__link link-hover--effect link-hover--effect-red"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li class="">
+              <a
+                class="drop-menu__link link-hover--effect link-hover--effect-black"
+                href="./words.html"
+                >Search</a
+              >
+            </li>
+            <li class="">
+              <a
+                class="drop-menu__link link-hover--effect link-hover--effect-black no-click"
+                href=""
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
       </nav>
       <header>
         <h1 class="title red">Highly Awarded Online Dictionary</h1>
@@ -57,6 +88,7 @@
             type="text"
             id="search__input-box"
             placeholder="Search for Word"
+            onkeypress="enterSearchIndex(event)"
           />
           <i
             class="search__enter click--effect fa-solid fa-magnifying-glass"
