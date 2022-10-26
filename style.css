@@ -125,7 +125,7 @@ NAVBAR
 .drop-menu-btn {
   cursor: pointer;
   font-size: 30px;
-  display: none;
+  display: none !important;
 }
 
 .drop-menu {
