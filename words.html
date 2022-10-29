@@ -50,6 +50,37 @@
               >
             </li>
           </ul>
+          <i
+            id="drop-menu-btn"
+            class="fa-solid fa-bars fa-bars-words"
+            onclick="toggleDropDown()"
+          ></i>
+          <div class="drop-menu">
+            <ul class="drop-menu__links">
+              <li class="">
+                <a
+                  class="drop-menu__link link-hover--effect link-hover--effect-red"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="">
+                <a
+                  id="current-link"
+                  class="drop-menu__link link-hover--effect link-hover--effect-black"
+                  href="./words.html"
+                  >Search</a
+                >
+              </li>
+              <li class="">
+                <a
+                  class="drop-menu__link link-hover--effect link-hover--effect-black no-click"
+                  href=""
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
         </nav>
       </div>
       <header>
@@ -61,10 +92,11 @@
             placeholder='Enter a "word"'
             onkeypress="enterSearchWords(event)"
           />
-          <i
-            class="search__enter click--effect fa-solid fa-magnifying-glass"
-            onclick="searchWord()"
-          ></i>
+          <div class="search__enter--container" onclick="searchWord()">
+            <i
+              class="search__enter click--effect fa-solid fa-magnifying-glass"
+            ></i>
+          </div>
         </div>
         <div class="words">
           <i class="fa fa-spinner"></i>

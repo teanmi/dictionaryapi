@@ -122,10 +122,10 @@ NAVBAR
 
 /* Drop down menu */
 
-.drop-menu-btn {
+#drop-menu-btn {
   cursor: pointer;
   font-size: 30px;
-  display: none !important;
+  display: none;
 }
 
 .drop-menu {
@@ -231,7 +231,7 @@ header {
 }
 
 @media screen and (max-width: 720px) {
-  .drop-menu-btn {
+  #drop-menu-btn {
     display: inline;
   }
 
