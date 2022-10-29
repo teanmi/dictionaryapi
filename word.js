@@ -154,7 +154,7 @@ const changeWebsites = () => {
   sessionStorage.setItem("word", word);
   sessionStorage.setItem("enteredWord", true);
 
-  document.location.href = "http://127.0.0.1:5500/js/dictionaryapi/words.html"; //change later
+  document.location.href = "https://teanmi.github.io/dictionaryapi/words.html"; //change later
 };
 
 if (sessionStorage.getItem("enteredWord")) {
