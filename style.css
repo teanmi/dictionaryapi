@@ -235,6 +235,10 @@ header {
 }
 
 @media screen and (max-width: 720px) {
+.title {
+  font-size: 36px;
+}
+
   #drop-menu-btn {
     display: inline;
   }
