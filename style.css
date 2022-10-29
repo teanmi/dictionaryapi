@@ -64,6 +64,10 @@ main {
   cursor: not-allowed;
 }
 
+.search__enter--container, .search__enter {
+  cursor: pointer;
+}
+
 /* 
 
 NAVBAR
@@ -244,13 +248,8 @@ header {
   }
 
   .main__img--wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: none;
   }
 
-  .main__img--wrapper img {
-    width: 80%;
-    height: auto;
-  }
+  
 }
