@@ -134,7 +134,7 @@ NAVBAR
 
 .drop-menu {
   position: absolute;
-  display: block;
+  display: none;
   height: 0;
   opacity: 0;
   overflow: hidden;
@@ -150,6 +150,7 @@ NAVBAR
 }
 
 .visable .drop-menu {
+  display: block;
   opacity: 1;
 }
 
