@@ -16,7 +16,7 @@ img {
 }
 
 .link-hover--effect-red::after {
-  background-color: rgb(151, 9, 8);
+  background-color: red;
 }
 
 .link-hover--effect-black::after {
@@ -57,7 +57,7 @@ main {
 }
 
 .red {
-  color: rgb(151, 9, 8);
+  color: red;
 }
 
 .no-click {
@@ -97,7 +97,7 @@ NAVBAR
 .nav__company--name {
   font-size: 28px;
   font-weight: 700;
-  color: rgb(151, 9, 8);
+  color: red;
 }
 
 .nav__links {
@@ -114,11 +114,11 @@ NAVBAR
 }
 
 #current-link {
-  color: rgb(151, 9, 8);
+  color: red;
 }
 
 .nav__link--btn {
-  background-color: rgb(151, 9, 8);
+  background-color: red;
   color: white;
   padding: 8px 12px;
   border-radius: 100px;
@@ -207,16 +207,16 @@ header {
   border-radius: 15px;
   font-size: 28px;
   padding: 0 20px;
-  border: 1px rgb(151, 9, 8) solid;
+  border: 1px red solid;
   outline-width: 0px;
 }
 
 #search__input-box:hover {
-  outline: rgb(151, 9, 8) solid 1px;
+  outline: red solid 1px;
 }
 
 #search__input-box:focus {
-  outline: rgb(151, 9, 8) solid 2px;
+  outline: red solid 2px;
 }
 
 .search__enter {

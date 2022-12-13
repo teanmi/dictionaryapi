@@ -1,6 +1,6 @@
 .white-btn {
   background-color: white;
-  color: rgb(151, 9, 8);
+  color: red;
   box-shadow: 0 0 16px 1px rgba(0, 0, 0, 0.4);
 }
 
@@ -14,7 +14,7 @@
 }
 
 .background-red {
-  background-color: rgb(151, 9, 8);
+  background-color: red;
 }
 
 .link-hover--effect {
@@ -106,7 +106,7 @@ Words
 */
 
 .words {
-  border: 3px solid rgb(151, 9, 8);
+  border: 3px solid red;
   height: 500px;
   width: 500px;
   margin: 36px auto;
@@ -156,7 +156,7 @@ Loading
 .fa-spinner {
   visibility: hidden;
   position: absolute;
-  color: rgb(151, 9, 8);
+  color: red;
   font-size: 100px;
   animation: spinner 1.5s infinite linear;
 }
